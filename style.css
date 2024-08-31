@@ -1,0 +1,17 @@
+    body{
+        height: 90vh;
+        width: 99vw;
+        background-color: rgb(50, 50, 50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes one_side{
+        from{
+            width: 0px;
+        }
+        to{
+            width: 99vw;
+        }
+    }
