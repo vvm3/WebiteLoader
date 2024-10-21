@@ -1,17 +1,37 @@
-    body{
-        height: 90vh;
-        width: 99vw;
+    body {
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: whitesmoke;
+    }
+
+    .main {
+        min-height: 100vh;
+        width: 100%;
         background-color: rgb(50, 50, 50);
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    @keyframes one_side{
-        from{
-            width: 0px;
-        }
-        to{
-            width: 99vw;
+    .box {
+        height: 100px;
+        width: 100px;
+        border-bottom: 2px solid rgb(0, 251, 255);
+        border-top: 2px solid red;
+        border-radius: 50%;
+        animation: rot 2s linear infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span {
+        position: fixed;
+    }
+
+    @keyframes rot {
+        0% {
+            transform: rotate(360deg);
         }
     }
